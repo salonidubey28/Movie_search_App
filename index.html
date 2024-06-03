@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav">
+                <h1>MovieApp</h1>
+                <form id="search-form">
+                    <input type="text" id="search-input" placeholder="Search for a movie...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <div class="links">
+                    <ul>
+                        <li><a href="#" data-filter="all">Home</a></li>
+                        <li><a href="#" data-filter="series">TV Shows</a></li>
+                        <li><a href="#" data-filter="movie">Web Series</a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button>LogIn</button>
+                    <button>SignUp</button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="search-results">
+                <h2>Search Results</h2>
+                <div id="search-results-container"></div>
+            </section>
+            <section id="featured-movies">
+                <h2>Latest Movies Related To Your Search</h2>
+                <div id="featured-movies-container"></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
